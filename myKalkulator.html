@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<title> Aplikasi Kalkulator Sederhana </title>
+<head>
+<script language = "javascript">
+//<!-
+document.write("dimodifikasi terakhir pada "+ document.lastModified) ;
+    function tambah () {
+        x = eval(form.x.value)
+        y = eval(form.y.value)
+        z = x + y
+        form.hasil.value = z
+    }
+        function kurang() {
+        x = eval(form.x.value)
+        y = eval(form.y.value)
+        z = x -  y
+        form.hasil.value = z
+    }
+    function kali() {
+        x = eval(form.x.value)
+        y = eval(form.y.value)
+        z = x * y
+        form.hasil.value = z
+    }
+    function bagi() {
+        x = eval(form.x.value)
+        y = eval(form.y.value)
+        z = x / y
+        form.hasil.value = z
+    }
+    function kosong() {
+        form.x.value = ""
+        form.y.value = ""
+        form.hasil.value = ""
+    }
+</script>
+</head>
+<table width="300" border="1" cellpadding="15" cellspacing="0" align="center">
+<form name="form">
+<tr>
+<td align="center">
+<h3 align="center"> Aplikasi Kalkulator Sederhana </h3>
+<p align="left"> &nbsp; &nbsp; &nbsp; Bil 1 <input type="text" name="x"></p>
+<p align="left"> &nbsp; &nbsp; &nbsp; Bil 2 <input type="text" name="y"></p>
+
+<input type="button" value=" + " onClick="tambah()">
+<input type="button" value=" - " onClick="kurang()">
+<input type="button" value=" x " onClick="kali()">
+<input type="button" value=" / " onClick="bagi()">
+
+<p align="left"> &nbsp; &nbsp; &nbsp; Hasil <input type="text" name="hasil" disabled="true"></p>
+<input  type="button" value="Clear" name="hapus" onClick="kosong()">
+</form>
+<h5 align="right"> by Diah Fatmawati </h5>
+</td>
+</tr>
+</body>
+</html>
